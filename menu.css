@@ -1,4 +1,6 @@
-div {
+.menu {
+    border: 1px solid black;
+    background-color: #9F00FF;
     width: 333px;
 }
 
@@ -29,5 +31,5 @@ li a:hover:not(.active) {
 }
 
 body {
-    background-color: #00331F;
+    background-color: #00190F;
 }
