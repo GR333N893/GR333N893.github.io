@@ -5,8 +5,8 @@ div {
 ul {
     list-style-type: none;
     border: 1px solid #00995F;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
 }
 
 li {
