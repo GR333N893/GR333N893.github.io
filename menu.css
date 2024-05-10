@@ -1,19 +1,15 @@
 .menu {
-    border: 1px solid black;
+    border: none;
     background-color: #9F00FF;
-    width: 333px;
-}
-
-ul {
+    width: 600px;
     list-style-type: none;
     border: 1px solid #00995F;
-    margin: auto;
-    padding: auto;
+    margin: 50px;
+    padding: 2px;
 }
 
 li {
 text-align: center;
-border-bottom: 1px solid #555;
 }
 
 li:last-child {
