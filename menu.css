@@ -32,12 +32,12 @@ body {
 
 #title {
     color: lime;
-    font-size: 42;
+    font-size: 42px;
     text-align: center;
 }
 
 #subtitle {
     color: lime;
-    fontsize: 21;
+    fontsize: 21px;
     text-align: center;
 }
