@@ -16,6 +16,7 @@ li a:hover {
 }
 
 #header {
+ line-height: 0px;
  text-align: center;
 }
 
@@ -25,7 +26,6 @@ li a:hover {
 }
 
 #subtitle {
- line-height: 0px;
  color: lime;
  font-size: 5.3vw;
 }
