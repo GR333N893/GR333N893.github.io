@@ -16,7 +16,6 @@ li a:hover {
 }
 
 #header {
- margin-top: 50px;
  line-height: 36px;
  text-align: center;
 }
@@ -34,6 +33,7 @@ li a:hover {
 body {
  width: 90%;
  margin: auto;
+ margin-top: 0px;
  background-color: #00190F;
  -ms-overflow-style: none;
  scrollbar-width: none;
