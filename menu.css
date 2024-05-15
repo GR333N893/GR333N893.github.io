@@ -33,4 +33,10 @@ body {
  width: 75%;
  margin: auto;
  background-color: #00190F;
+ -ms-overflow-style: none;
+ scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+ display: none;
 }
