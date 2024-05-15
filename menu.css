@@ -41,3 +41,7 @@ body {
     fontsize: 21px;
     text-align: center;
 }
+
+p {
+    margin: none;
+}
