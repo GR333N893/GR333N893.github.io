@@ -22,11 +22,15 @@ li a:hover {
 #title {
  color: lime;
  font-size: 10vw;
+ margin: none;
+ padding: none;
 }
 
 #subtitle {
  color: lime;
  font-size: 5.3vw;
+ margin: none;
+ padding: none;
 }
 
 body {
