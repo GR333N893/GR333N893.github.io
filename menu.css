@@ -25,23 +25,21 @@ li a:hover:not(.active) {
 }
 
 #header {
- 
+ text-align: center;
 }
 
 #title {
  color: lime;
  font-size: 50%;
- text-align: center;
 }
 
 #subtitle {
  color: lime;
  fontsize: 25%;
- text-align: center;
 }
 
 body {
- width: 50%;
+ width: 75%;
  margin: auto;
  background-color: #00190F;
 }
