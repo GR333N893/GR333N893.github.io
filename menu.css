@@ -31,9 +31,7 @@ li a:hover {
 
 body {
  width: 80%;
- margin-top: 5px;
- margin-left: auto;
- margin-right: auto;
+ margin: auto;
  background-color: #00190F;
  -ms-overflow-style: none;
  scrollbar-width: none;
