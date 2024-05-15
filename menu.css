@@ -16,7 +16,7 @@ li a:hover {
 }
 
 #header {
- top: 50px;
+ margin-top: 50px;
  line-height: 36px;
  text-align: center;
 }
