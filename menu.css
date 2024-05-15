@@ -10,14 +10,9 @@ li {
  text-align: center;
 }
 
-li a:hover:not(.active) {
+li a:hover {
  background-color: black;
  color: #FF9F00;
-}
-
-li a:hover(.active) {
- background-color: black;
- color: #9F00FF;
 }
 
 #header {
