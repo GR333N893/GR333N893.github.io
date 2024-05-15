@@ -10,16 +10,12 @@ li {
  text-align: center;
 }
 
-li:last-child {
- border-bottom: none;
-}
-
 li a:hover:not(.active) {
  background-color: black;
  color: #FF9F00;
 }
 
-li a:hover:not(.active) {
+li a:hover(.active) {
  background-color: black;
  color: #9F00FF;
 }
