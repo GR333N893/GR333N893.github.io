@@ -16,19 +16,18 @@ li a:hover {
 }
 
 #header {
+ line-height: 36px;
  text-align: center;
 }
 
 #title {
  color: lime;
  font-size: 10vw;
- line-height: 36px;
 }
 
 #subtitle {
  color: lime;
  font-size: 5.3vw;
- line-height: 36px;
 }
 
 body {
