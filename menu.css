@@ -27,8 +27,7 @@ li a:hover:not(.active) {
 }
 
 #header {
- width: 50%;
- margin: auto;
+ 
 }
 
 #title {
@@ -44,5 +43,7 @@ li a:hover:not(.active) {
 }
 
 body {
+ width: 50%;
+ margin: auto;
  background-color: #00190F;
 }
