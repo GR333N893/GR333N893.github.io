@@ -9,11 +9,11 @@
 }
 
 li {
-text-align: center;
+    text-align: center;
 }
 
 li:last-child {
-border-bottom: none;
+    border-bottom: none;
 }
 
 li a:hover:not(.active) {
@@ -28,4 +28,16 @@ li a:hover:not(.active) {
 
 body {
     background-color: #00190F;
+}
+
+#title {
+    color: lime;
+    font-size: 42;
+    text-align: center;
+}
+
+#subtitle {
+    color: lime;
+    fontsize: 21;
+    text-align: center;
 }
