@@ -26,12 +26,12 @@ li a:hover(.active) {
 
 #title {
  color: lime;
- font-size: 50%;
+ font-size: 50vw;
 }
 
 #subtitle {
  color: lime;
- fontsize: 25%;
+ fontsize: 25vw;
 }
 
 body {
