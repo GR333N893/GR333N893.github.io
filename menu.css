@@ -30,13 +30,13 @@ li a:hover:not(.active) {
 
 #title {
  color: lime;
- font-size: 42px;
+ font-size: 50%;
  text-align: center;
 }
 
 #subtitle {
  color: lime;
- fontsize: 21px;
+ fontsize: 25%;
  text-align: center;
 }
 
