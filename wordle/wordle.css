@@ -1,0 +1,44 @@
+.menu {
+    border: none;
+    background-color: #9F00FF;
+    list-style-type: none;
+    border: 1px solid #00995F;
+    padding: 2px;
+   }
+   
+   li {
+    text-align: center;
+   }
+   
+   li a:hover {
+    background-color: black;
+    color: #FF9F00;
+   }
+   
+   #header {
+    line-height: 36px;
+    padding-top: 36px;
+    text-align: center;
+   }
+   
+   #title {
+    color: #00FF9F;
+    font-size: 10vw;
+   }
+   
+   #subtitle {
+    color: #00FF9F;
+    font-size: 5.3vw;
+   }
+   
+   body {
+    width: 80%;
+    margin: auto;
+    background-color: #00331F;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+   }
+   
+   body::-webkit-scrollbar {
+    display: none;
+   }
