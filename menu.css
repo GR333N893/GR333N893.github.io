@@ -3,7 +3,6 @@
     font-size: 3vw;
     border: none;
     margin: auto;
-    background-color: #9F00FF;
     list-style-type: none;
     border: 1px solid #00995F;
     padding: 2px;
@@ -11,6 +10,7 @@
 
 li {
     text-align: center;
+    background-color: #9F00FF;
 }
 
 li a:hover {
