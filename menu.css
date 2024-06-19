@@ -14,7 +14,7 @@
     background-color: #9F00FF;
 }
 
-li a:hover {
+.btn a:hover {
     background-color: black;
     color: #FF9F00;
 }
