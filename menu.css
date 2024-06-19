@@ -8,9 +8,9 @@
     padding: 2px;
 }
 
-li {
+.btn {
     text-align: center;
-    padding: 1em;
+    padding: 1em 1em;
     background-color: #9F00FF;
 }
 
