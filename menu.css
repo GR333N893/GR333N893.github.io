@@ -26,13 +26,13 @@ a:hover {
     margin: auto;
     display: table;
     line-height: 25px;
-    padding-top: 18px;
+    padding-top: 25px;
     text-align: center;
 }
 
 #title {
     color: #00FF9F;
-    font-size: 64px;
+    font-size: 96px;
 }
 
 #subtitle {
