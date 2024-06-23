@@ -1,7 +1,7 @@
 .menu {
     display: table;
     width: 45%;
-    font-size: 3vw;
+    font-size: 42px;
     border: none;
     margin: auto;
     border: 1px solid #00995F;
@@ -25,19 +25,19 @@ a:hover {
 #header {
     margin: auto;
     display: table;
-    line-height: 25px;
-    padding-top: 25px;
+    line-height: 36px;
+    padding-top: 42px;
     text-align: center;
 }
 
 #title {
     color: #00FF9F;
-    font-size: 96px;
+    font-size: 132px;
 }
 
 #subtitle {
     color: #00FF9F;
-    font-size: 33.5px;
+    font-size: 66px;
 }
 
 body {
