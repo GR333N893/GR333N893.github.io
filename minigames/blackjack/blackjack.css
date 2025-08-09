@@ -18,17 +18,21 @@ body {
 }
 
 img {
-    height: 98px;
+    height: 1.5in;
 }
 
 @media screen and (max-width: 630px) {
     #title {
         font-size: 100px;
     }
+
+    img {
+        height: 3in;
+    }
 }
 
 @media (orientation: portrait) {
     img {
-        height: 150px;
+        height: 3in;
     }
 }
