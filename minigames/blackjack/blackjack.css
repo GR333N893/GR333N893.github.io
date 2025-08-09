@@ -1,3 +1,8 @@
+#title {
+    font-size: 136px;
+    color: purple;
+}
+
 body {
     text-align: center;
     color: white;
@@ -6,7 +11,8 @@ body {
     background-color: #008650;
 }
 
-#title {
-    font-size: 136px;
-    color: purple;
+@media screen and (max-width: 630px) {
+    #title {
+        font-size: 100px;
+    }
 }
