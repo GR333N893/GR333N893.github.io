@@ -26,3 +26,9 @@ img {
         height: 1in;
     }
 }
+
+@media (resolution >= 2dppx) {
+    img {
+        height: 3in;
+    }
+}
