@@ -1,11 +1,4 @@
-import { makeDeck } from "./deck";
-
-function draw() {
-    let num = Math.floor(Math.random() * deck.length);
-    const randomCard = deck[num];
-    deck.splice(num, 1);
-    return randomCard;
-}
+import { makeDeck, draw } from "./deck";
 
 const playerHand = [];
 const dealerHand = [];

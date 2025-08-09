@@ -41,3 +41,10 @@ export function makeDeck() {
     }
     return deck;
 }
+
+export function draw() {
+    let num = Math.floor(Math.random() * deck.length);
+    const randomCard = deck[num];
+    deck.splice(num, 1);
+    return randomCard;
+}
