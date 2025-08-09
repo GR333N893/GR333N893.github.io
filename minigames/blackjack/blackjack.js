@@ -1,4 +1,4 @@
-import { makeDeck, draw } from "./deck";
+import { makeDeck, draw } from './deck.js';
 
 const playerHand = [];
 const dealerHand = [];
