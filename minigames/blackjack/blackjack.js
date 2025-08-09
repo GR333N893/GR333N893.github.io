@@ -33,7 +33,7 @@ document.getElementById("playerHand").innerHTML = phand;
 document.getElementById("info").innerHTML = "deck length: " + deck.length;
 document.getElementById("deck").innerHTML = sDeck;
 
-document.getElementById("dealerHand").style.color = "white";
+/*document.getElementById("dealerHand").style.color = "white";
 document.getElementById("playerHand").style.color = "white";
 document.getElementById("info").style.color = "white";
-document.getElementById("deck").style.color = "white";
+document.getElementById("deck").style.color = "white";*/
