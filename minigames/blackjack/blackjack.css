@@ -1,5 +1,5 @@
 #title {
-    font-size: 136px;
+    font-size: 100px;
     color: black;
 }
 
@@ -22,17 +22,7 @@ img {
 }
 
 @media screen and (max-width: 630px) {
-    #title {
-        font-size: 100px;
-    }
-
     img {
-        height: 3in;
-    }
-}
-
-@media (orientation: portrait) {
-    img {
-        height: 3in;
+        height: 1in;
     }
 }
