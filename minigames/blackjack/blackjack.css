@@ -1,12 +1,12 @@
 #title {
-    font-size: 100px;
+    font-size: 5em;
     color: black;
 }
 
 #button {
-    font-size: 36px;
+    font-size: 1em;
     background-color: goldenrod;
-    border: 5px solid black;
+    border: .1em solid black;
 }
 
 body {
@@ -18,17 +18,5 @@ body {
 }
 
 img {
-    height: 1.5in;
-}
-
-@media screen and (max-width: 630px) {
-    img {
-        height: 1in;
-    }
-}
-
-@media (resolution >= 2dppx) {
-    img {
-        height: 3in;
-    }
+    height: 20vh;
 }
