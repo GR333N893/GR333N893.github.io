@@ -1,9 +1,6 @@
-p {
+body {
     font-size: 36px;
     color: white;
-}
-
-body {
     width: 90%;
     margin: auto;
     background-color: #008650;
