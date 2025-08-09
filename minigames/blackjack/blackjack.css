@@ -1,10 +1,10 @@
 #title {
-    font-size: 5em;
+    font-size: 10vw;
     color: black;
 }
 
 #button {
-    font-size: 1em;
+    font-size: 3vw;
     background-color: goldenrod;
     border: .1em solid black;
 }
@@ -18,5 +18,5 @@ body {
 }
 
 img {
-    height: 40vh;
+    height: 20vh;
 }
