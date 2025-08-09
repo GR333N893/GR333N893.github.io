@@ -1,6 +1,6 @@
 #title {
     font-size: 136px;
-    color: purple;
+    color: black;
 }
 
 #button {
@@ -15,6 +15,11 @@ body {
     width: 90%;
     margin: auto;
     background-color: seagreen;
+}
+
+img {
+    height: 88px;
+    width: 63px;
 }
 
 @media screen and (max-width: 630px) {

@@ -10,23 +10,24 @@ function start() {
     function makeDeck() {
         const deck = [];
         const suit = [
-            "Spades",
-            "Hearts",
-            "Diamonds",
-            "Clubs"
+            "spades",
+            "hearts",
+            "diamonds",
+            "clubs"
         ];
         const faces = [
-            "Jack",
-            "Queen",
-            "King"
+            "jack",
+            "queen",
+            "king"
         ];
 
         for (let s = 0; s < 4; s++) {
             const ace = {
-                face: "Ace",
+                face: "ace",
                 value: 11,
-                suit: suit[s]
+                suit: suit[s],
             };
+            ace.png = "cards/" + ace.face + suit[s] + ".png";
             deck.push(ace);
 
             for (let v = 0; v < 9; v++) {
@@ -36,6 +37,7 @@ function start() {
                     value: cardValue,
                     suit: suit[s]
                 };
+                card.png = "cards/" + card.face + suit[s] + ".png";
                 deck.push(card);
             }
 
@@ -45,6 +47,7 @@ function start() {
                     value: 10,
                     suit: suit[s]
                 };
+                royalty.png = "cards/" + royalty.face + suit[s] + ".png";
                 deck.push(royalty);
             }
         }
@@ -82,14 +85,16 @@ function start() {
         dhand.push(dealerHand[l].face + " of " + dealerHand[l].suit);
     }
 
-    for (let d = 0; d < deck.length; d++) {
-        sDeck.push(deck[d].face + " of " + deck[d].suit);
-    }
+    deck.forEach(card => {
+        const imgElement = document.createElement("img");
+        imgElement.src = card.png;
+        imgElement.alt = card.face + " of " + card.suit;
+        document.getElementById("6").appendChild(imgElement);
+    });
 
     document.getElementById("1").innerHTML = "dealer hand";
     document.getElementById("2").innerHTML = dhand;
     document.getElementById("3").innerHTML = "your hand";
     document.getElementById("4").innerHTML = phand;
     document.getElementById("5").innerHTML = "deck length: " + deck.length;
-    document.getElementById("6").innerHTML = sDeck;
 }
