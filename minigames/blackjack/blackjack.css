@@ -1,10 +1,10 @@
 #title {
-    font-size: 10vw;
+    font-size: 6em;
     color: black;
 }
 
 #button {
-    font-size: 3vw;
+    font-size: 2em;
     background-color: goldenrod;
     border: .1em solid black;
 }
