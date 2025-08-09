@@ -1,6 +1,6 @@
 p {
     font-size: 36px;
-    color: #ffffff;
+    color: white;
 }
 
 body {
@@ -12,4 +12,9 @@ body {
 #title {
     font-size: 136px;
     color: purple;
+}
+
+.list {
+    font-size: 36px;
+    color: white;
 }
