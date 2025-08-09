@@ -26,3 +26,9 @@ img {
         font-size: 100px;
     }
 }
+
+@media (orientation: portrait) {
+    img {
+        height: 150px;
+    }
+}
