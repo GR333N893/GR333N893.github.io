@@ -3,16 +3,18 @@
     color: purple;
 }
 
-/*#button {
+#button {
+    font-size: 36px;
+    background-color: goldenrod;
     border: 5px solid black;
-}*/
+}
 
 body {
     text-align: center;
-    color: white;
+    color: black;
     width: 90%;
     margin: auto;
-    background-color: #008650;
+    background-color: seagreen;
 }
 
 @media screen and (max-width: 630px) {
