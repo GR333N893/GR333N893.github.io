@@ -18,8 +18,7 @@ body {
 }
 
 img {
-    height: 88px;
-    width: 63px;
+    height: 98px;
 }
 
 @media screen and (max-width: 630px) {
