@@ -6,7 +6,5 @@ p {
 body {
     width: 90%;
     margin: auto;
-    background-color: #00331F;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    background-color: #008650;
 }
