@@ -1,6 +1,19 @@
 #title {
-    font-size: 6em;
+    font-size: 3em;
     color: black;
+    text-shadow: none;
+}
+
+body {
+    text-align: center;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left shadow */
+        1px -1px 0 black,  /* Top-right shadow */
+        -1px  1px 0 black,  /* Bottom-left shadow */
+        1px  1px 0 black;  /* Bottom-right shadow */
+    margin: auto;
+    background-color: seagreen;
 }
 
 #button {
@@ -9,14 +22,6 @@
     border: .1em solid black;
 }
 
-body {
-    text-align: center;
-    color: black;
-    width: 90%;
-    margin: auto;
-    background-color: seagreen;
-}
-
 img {
-    height: 20vh;
+    height: 25vh;
 }

@@ -73,17 +73,21 @@ function start() {
         dealerHand.push(dcard);
     }
 
-    const phand = [];
-    const dhand = [];
     const sDeck = [];
 
-    for (let l = 0; l < playerHand.length; l++) {
-        phand.push(playerHand[l].face + " of " + playerHand[l].suit);
-    }
+    dealerHand.forEach(card => {
+        const imgElement = document.createElement("img");
+        imgElement.src = card.png;
+        imgElement.alt = card.face + " of " + card.suit;
+        document.getElementById("2").appendChild(imgElement);
+    });
 
-    for (let l = 0; l < dealerHand.length; l++) {
-        dhand.push(dealerHand[l].face + " of " + dealerHand[l].suit);
-    }
+    playerHand.forEach(card => {
+        const imgElement = document.createElement("img");
+        imgElement.src = card.png;
+        imgElement.alt = card.face + " of " + card.suit;
+        document.getElementById("4").appendChild(imgElement);
+    });
 
     deck.forEach(card => {
         const imgElement = document.createElement("img");
@@ -93,8 +97,6 @@ function start() {
     });
 
     document.getElementById("1").innerHTML = "dealer hand";
-    document.getElementById("2").innerHTML = dhand;
     document.getElementById("3").innerHTML = "your hand";
-    document.getElementById("4").innerHTML = phand;
     document.getElementById("5").innerHTML = "deck length: " + deck.length;
 }
