@@ -89,13 +89,6 @@ function start() {
         document.getElementById("4").appendChild(imgElement);
     });
 
-    deck.forEach(card => {
-        const imgElement = document.createElement("img");
-        imgElement.src = card.png;
-        imgElement.alt = card.face + " of " + card.suit;
-        document.getElementById("6").appendChild(imgElement);
-    });
-
     document.getElementById("1").innerHTML = "dealer hand";
     document.getElementById("3").innerHTML = "your hand";
     document.getElementById("5").innerHTML = "deck length: " + deck.length;

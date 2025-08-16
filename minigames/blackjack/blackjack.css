@@ -12,8 +12,7 @@ body {
         1px -1px 0 black,  /* Top-right shadow */
         -1px  1px 0 black,  /* Bottom-left shadow */
         1px  1px 0 black;  /* Bottom-right shadow */
-    margin-top: auto;
-    margin-right: -50px;
+    margin: auto;
     background-color: seagreen;
 }
 
@@ -24,13 +23,7 @@ body {
 }
 
 img {
-    margin-left: -35px;
-    margin-right: -35px;
-    height: 7em;
-}
-
-@media only screen and (orientation: portrait){
-    img {
-        height: 25vh;
-    }
+    height: 25vh;
+    margin-left: -6vh;
+    margin-right: -6vh;
 }
