@@ -16,8 +16,8 @@ body {
     background-color: seagreen;
 }
 
-#button {
-    font-size: 2em;
+button {
+    font-size: 1.75em;
     background-color: goldenrod;
     border: .1em solid black;
 }
