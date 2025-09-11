@@ -1,16 +1,86 @@
 more.style.display = 'none';
+stand.style.display = 'none';
+pa.style.display = 'none';
+const deck = [];
+const discardPile = [];
 
 function start() {
-    button.remove();
+    button.style.display = 'none';
+    dwipe();
+    pwipe();
+    pa.style.display = 'none';
     more.style.display = 'inline-block';
+    stand.style.display = 'inline-block';
 
-    function wipe() {
+    function dwipe() {
+        dtotal = 0;
+        document.getElementById("1").innerHTML = "";
+        document.getElementById("2").innerHTML = "";
+    }
+
+    function pwipe() {
+        ptotal = 0;
         document.getElementById("3").innerHTML = "";
         document.getElementById("4").innerHTML = "";
     }
 
-    function makeDeck() {
-        const deck = [];
+    function draw() {
+        let num = Math.floor(Math.random() * deck.length);
+        const randomCard = deck[num];
+        deck.splice(num, 1);
+        discardPile.push(randomCard);
+        return randomCard;
+    }
+
+    function plist() {
+        playerHand.forEach(card => {
+            ptotal += card.value;
+            const imgElement = document.createElement("img");
+            imgElement.src = card.front;
+            imgElement.alt = card.face + " of " + card.suit;
+            document.getElementById("3").appendChild(imgElement);
+        });
+        document.getElementById("4").innerHTML = ptotal;
+
+        if (ptotal >= 21) {
+            roundEnd();
+        }
+    }
+
+    function roundEnd() {
+        dwipe();
+        more.style.display = 'none';
+        stand.style.display = 'none';
+        pa.style.display = 'inline-block';
+
+        dealerHand.forEach(card => {
+            const imgElement = document.createElement("img");
+            dtotal += card.value;
+            imgElement.src = card.front;
+            imgElement.alt = card.face + " of " + card.suit;
+            document.getElementById("2").appendChild(imgElement);
+        });
+
+        document.getElementById("1").innerHTML = dtotal;
+    }
+
+    const hitBtn = document.getElementById("more");
+
+    hitBtn.addEventListener("click", function() {
+        pwipe();
+        const card = draw();
+        playerHand.push(card);
+
+        plist();
+    });
+
+    const standBtn = document.getElementById("stand");
+
+    standBtn.addEventListener("click", function() {
+        roundEnd();
+    });
+
+    if (deck.length < 1 && discardPile.length < 1) {
         const suit = [
             "spades",
             "hearts",
@@ -22,7 +92,6 @@ function start() {
             "queen",
             "king"
         ];
-
         for (let s = 0; s < 4; s++) {
             const ace = {
                 face: "ace",
@@ -56,34 +125,13 @@ function start() {
                 deck.push(royalty);
             }
         }
-        return deck;
     }
-
-    function draw() {
-        let num = Math.floor(Math.random() * deck.length);
-        const randomCard = deck[num];
-        deck.splice(num, 1);
-        return randomCard;
-    }
-
-    const element = document.getElementById("more");
-    element.addEventListener("click", function() {
-        wipe();
-        ptotal = 0;
-        const card = draw();
-        playerHand.push(card);
-
-        playerHand.forEach(card => {
-            ptotal += card.value;
-            const imgElement = document.createElement("img");
-            imgElement.src = card.front;
-            imgElement.alt = card.face + " of " + card.suit;
-            document.getElementById("3").appendChild(imgElement);
+    else if (deck.length < 1) {
+        discardPile.forEach(card => {
+            deck.push(card);
+            discardPile.splice(card, 1);
         });
-        document.getElementById("4").innerHTML = ptotal;
-    });
-
-    const deck = makeDeck();
+    }
 
     dtotal = 0;
     ptotal = 0;
@@ -110,14 +158,7 @@ function start() {
         document.getElementById("2").appendChild(imgElement);
     };
 
-    playerHand.forEach(card => {
-        ptotal += card.value;
-        const imgElement = document.createElement("img");
-        imgElement.src = card.front;
-        imgElement.alt = card.face + " of " + card.suit;
-        document.getElementById("3").appendChild(imgElement);
-    });
-
     document.getElementById("1").innerHTML = dtotal;
-    document.getElementById("4").innerHTML = ptotal;
+    plist();
+    document.getElementById("2.5").innerHTML = deck.length + " " + discardPile.length;
 }
