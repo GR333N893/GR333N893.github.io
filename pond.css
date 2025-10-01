@@ -1,9 +1,11 @@
+html {
+    cursor: url("res/cur.png"), auto;
+}
 body {
     font-family: "Rubik Puddles", system-ui;
     font-style: normal;
     font-weight: 400;
     background-color: #3e663e;
-    cursor: url("res/barrel.png"), default;
 }
 h1 {
     color: black;
