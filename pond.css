@@ -1,0 +1,37 @@
+body {
+    font-family: "Rubik Puddles", system-ui;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #3e663e;
+    cursor: url("res/barrel.png"), default;
+}
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#pond {
+    width: 65%;
+    margin-top: 5vw;
+    margin-left: 17%;
+    position: absolute;
+}
+.bar {
+    width: 6%;
+    position: absolute;
+}
+#b1 {
+    rotate: 90deg;
+    margin-top: 13%;
+    margin-left: 47%;
+}
+#b2 {
+    margin-top: 0%;
+    margin-left: 78%;
+}
+#b3 {
+    margin-top: 6.5%;
+    margin-left: 16%;
+}
