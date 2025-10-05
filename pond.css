@@ -18,22 +18,4 @@ h1 {
     width: 65%;
     margin-top: 5vw;
     margin-left: 17%;
-    position: absolute;
-}
-.bar {
-    width: 6%;
-    position: absolute;
-}
-#b1 {
-    rotate: 90deg;
-    margin-top: 13%;
-    margin-left: 47%;
-}
-#b2 {
-    margin-top: 0%;
-    margin-left: 78%;
-}
-#b3 {
-    margin-top: 6.5%;
-    margin-left: 16%;
 }
